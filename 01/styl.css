@@ -1,0 +1,53 @@
+
+* {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+}
+
+.header, .nav, .footer {
+    color: white;
+    padding: 2px;
+}
+
+.header, .footer {
+    background: darkgreen;
+}
+
+.nav {
+    background: forestgreen;
+}
+
+section {
+    background: lightgreen;
+    width: 33.3%;
+    height: 550px;
+    padding-top: 10px;
+    overflow: auto;
+    float: left;
+}
+
+h2 {
+    width: 33.2%;
+    display: inline-block;
+}
+
+table, td, th {
+    border: 1px solid darkgreen;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.section-center img {
+    width: 95%;
+    border-radius: 8px;
+}
+
+.section-left tr:hover {
+    background: forestgreen;
+}

@@ -1,0 +1,7 @@
+1. SELECT p.marka, p.model, p.cena FROM pojazdy p WHERE p.marka = "BM" ORDER BY p.cena DESC LIMIT 15;
+
+2. SELECT AVG(p.cena) as srednia_cena, MAX(p.cena) as maskymalna_cena FROM pojazdy p WHERE p.model = "meta";
+
+3. SELECT p.marka, p.model, p.cena, k.nazwa, k.doplata FROM pojazdy p JOIN kolory k ON p.kolor = k.id WHERE p.model = "alfa"
+
+4. SELECT p.marka, p.model, p.cena FROM pojazdy p ORDER BY RAND() LIMIT 2;
