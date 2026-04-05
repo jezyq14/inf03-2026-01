@@ -1,0 +1,41 @@
+* {
+    font-family: Georgia, serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header,
+.footer {
+    background: forestgreen;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+.nav {
+    background: darkkhaki;
+    height: 150px;
+    overflow: hidden;
+}
+
+.aside,
+.section {
+    background: khaki;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.aside img {
+    padding: 2px;
+    margin: 10px;
+    border: 2px dotted forestgreen;
+    border-radius: 40px;
+}
+
+p {
+    font-size: 120%;
+    font-style: italic;
+}
