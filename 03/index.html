@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pola figur</title>
+        <link rel="stylesheet" href="styl.css" />
+    </head>
+    <body>
+        <header class="header">
+            <h2>Pola figur płaskich</h2>
+        </header>
+
+        <main class="main">
+            <nav class="nav">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="index.html">Prostokąt i trójkąt</a></li>
+                    <li><a href="kolo.html">Okrąg i koło</a></li>
+                </ul>
+            </nav>
+
+            <section class="section">
+                <img src="1d.bmp" alt="Figura" class="big-image" />
+
+                <br />
+
+                <!-- Skrypt 1 -->
+                <img
+                    src="1m.bmp"
+                    alt="Wybierz trójkąt"
+                    class="section-image"
+                    onclick="change('1d.bmp')"
+                />
+                <img
+                    src="2m.bmp"
+                    alt="Wybierz prostokąt"
+                    class="section-image"
+                    onclick="change('2d.bmp')"
+                />
+            </section>
+
+            <aside class="aside">
+                <h3>Pole prostokąta / pole trójkąta</h3>
+
+                <label for="a">Bok prostokąta / podstawa trójkąta</label>
+                <br />
+                <input type="number" name="a" id="a" />
+                <br />
+
+                <label for="b">Drugi bok prostokąta / wysokość trójkąta</label>
+                <br />
+                <input type="number" name="b" id="b" />
+                <br />
+
+                <button type="submit" onclick="count()">Oblicz</button>
+                <br />
+
+                <!-- Skrypt 2 -->
+                <p class="output"></p>
+            </aside>
+        </main>
+
+        <footer class="footer">
+            <p>Autor: 12345678909</p>
+        </footer>
+    </body>
+
+    <script src="script.js"></script>
+</html>
