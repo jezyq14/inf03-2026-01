@@ -1,0 +1,9 @@
+1. SELECT m.id, m.imie, m.nazwisko FROM maturzysta m WHERE m.szkola = "T3" ORDER BY m.nazwisko;
+
+2. SELECT DISTINCT a.przedmiot FROM arkusz a;
+
+3. SELECT MIN(a.rok) as najstarszy, MAX(a.rok) as najmlodszy FROM arkusz a;
+
+4. SELECT w.maturzysta_id, AVG(w.punkty) AS wynik FROM wynik w GROUP BY w.maturzysta_id ORDER BY wynik DESC LIMIT 1;
+
+5. SELECT a.rok, a.sesja, a.przedmiot, w.punkty FROM arkusz a JOIN wynik w ON w.maturzysta_id = 31;
