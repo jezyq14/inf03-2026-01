@@ -1,0 +1,7 @@
+1. SELECT p.id, p.imie, p.nazwisko FROM personel p WHERE p.status = 'policjant';
+
+2. SELECT p.typ, COUNT(p.id) FROM pojazdy p GROUP BY p.typ;
+
+3. SELECT p.id, p.nazwisko FROM personel p WHERE p.id NOT IN (SELECT r.id_personel FROM rejestr r);
+
+4. INSERT INTO `rejestr` (`id`, `data`, `id_personel`, `id_pojazd`) VALUES (NULL, CURRENT_DATE(), '1', '14');
